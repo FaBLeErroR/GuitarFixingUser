@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>780</width>
+     <height>480</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">Line{
+	background-color: #ffb146;
+	border: none;
+}
+
+QLabel{
+	color: #ff9f1b;
+}
+
+QPushButton{
+	color:white;
+	background-color: #f1d275;
+	border: 1px solid #ffad3d;
+	height: 30px;
+}
+
+QPushButton:pressed{
+	background-color: #ff9d16;
+	font-weight: bold;
+}
+
+QPushButton:hover{
+	background-color: #ff9d16;
+}
+
+QComboBox {
+	border: 1px solid #ffad3d;
+	font-size: 14pt;
+}
+
+QTableView{
+	border: 1px solid #ffad3d;
+}
+
+QTableView::item{
+	border: 1px solid #ffad3d;
+	color: #ffa120;
+}
+
+QTableView::item:selected{
+	background-color: #ffad3d;
+	color: white;
+}
+
+QHeaderView{
+	width:100%;
+	background-color: #ffa120;
+	color: white;
+	border: none;
+	font-weight: bold;
+	padding: 2px;
+}</string>
+   </property>
+   <widget class="QLabel" name="repair_plan">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>780</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>План ремонта</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableView" name="repair_table_alone">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>50</y>
+      <width>780</width>
+      <height>430</height>
+     </rect>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="editTriggers">
+     <set>QAbstractItemView::NoEditTriggers</set>
+    </property>
+    <attribute name="horizontalHeaderCascadingSectionResizes">
+     <bool>true</bool>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>false</bool>
+    </attribute>
+    <attribute name="verticalHeaderHighlightSections">
+     <bool>false</bool>
+    </attribute>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
